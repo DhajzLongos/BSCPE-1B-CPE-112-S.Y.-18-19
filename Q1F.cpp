@@ -1,15 +1,12 @@
-#include <iostream>  // UNSAY SULOD ANI?
+#include <iostream> 
 #include <string>
 
 using namespace std; 
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
- // global
-
 class cpe1b{
 	public:
-		void palindromic_prime(long x); // PASABOT ANI KAY MAGHIMO KAG FUNCTION NGA PALINDROMIC PRIME
+		void palindromic_prime(long x); 	// ᜉᜐᜊᜓᜆ᜔ ᜀᜈᜒ ᜃᜌ᜔ ᜋᜄ᜔ᜑᜒᜋᜓ ᜃᜄ᜔ FUNCTION ᜅ PALINDROMIC PRIME
 		void wasteful_number(long x);
-		long prime(long num);  // KANI CLASS GAHIMOG FUNCTION NGA GINGANLAN UG PRIME NGA longEGER KAY longEGER MAN ANG PRIME DILI STRING DILI POD FLOAT
+		long prime(long num);  			// ᜃᜈᜒ CLASS ᜄᜑᜒᜋᜓᜄ᜔ FUNCTION ᜅ ᜄᜒᜅᜈ᜔ᜎᜈ᜔ ᜂᜄ᜔ PRIME ᜅ 
 		long binary(long num1);
 		long reverse(long num2);
 		long digit(long num3);
@@ -33,18 +30,18 @@ int main() {
     	cout << "The size of str is " << str.length() << " bytes.\n";
 	
 	// EXAM
-	if (str.length()%2!=0) //statement ni siya para mahibaw an nga ODD ang str.length
+	if (str.length()%2!=0) 		     // statement ᜈᜒ ᜐᜒᜌ ᜉᜇ ᜋᜑᜒᜊᜏ᜔ᜀᜈ᜔ ᜅ ODD ᜀᜅ᜔ str.length
 		{
-		for(k=2;k<=str.length();k++) //loop statement ni siya para ma-isa-isa ang range ug process
+		for(k=2;k<=str.length();k++) // loop statement ᜈᜒ ᜐᜒᜌ ᜉᜇ ᜋ-ᜁᜐ-ᜁᜐ ᜀᜅ᜔ range ᜂᜄ᜔ process
 			{	
-			guwapo.palindromic_prime(k); //gitawag ang function nga 'palindromic_prime' ni 'guwapo' para muperform sa tanang process sa range
+			guwapo.palindromic_prime(k); // ᜄᜒᜆᜏᜄ᜔ ᜀᜅ᜔ function ᜅ 'palindromic_prime' ᜈᜒ 'guwapo' ᜉᜇ ᜋᜓperform ᜐ ᜆᜈᜅ᜔ process ᜐ range
 			}
 		}
 	else
 		{
 		for(k=2;k<=str.length();k++)
 			{
-			guwapo.wasteful_number(k); //gitawag ang function nga 'wasteful_number' ni 'guwapo' para muperform sa tanang process sa range
+			guwapo.wasteful_number(k); // ᜄᜒᜆᜏᜄ᜔ ᜀᜅ᜔ function ᜅ 'wasteful_number' ᜈᜒ 'guwapo' ᜉᜇ ᜋᜓperform ᜐ ᜆᜈᜅ᜔ process sa range
 			}
 		}
 	
