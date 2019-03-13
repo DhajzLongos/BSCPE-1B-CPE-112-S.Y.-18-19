@@ -25,26 +25,28 @@ class cpe1b{
 };
 
 int main() {
-	
 	cpe1b guwapo;
-	long num;	
-    string str;
+	long num, k;	
+	string str;
     
 	cin>>str;
-    cout << "The size of str is " << str.length() << " bytes.\n";
+    	cout << "The size of str is " << str.length() << " bytes.\n";
 	
-	
-
 	// EXAM
-	
-	if (str.length()==num){
-		guwapo.palindromic_prime(num);
-	}
-	
-	else{
-		guwapo.wasteful_number(num);
-	}
-	
+	if (str.length()%2!=0) //statement ni siya para mahibaw an nga ODD ang str.length
+		{
+		for(k=2;k<=str.length();k++) //loop statement ni siya para ma-isa-isa ang range ug process
+			{	
+			guwapo.palindromic_prime(k); //gitawag ang function nga 'palindromic_prime' ni 'guwapo' para muperform sa tanang process sa range
+			}
+		}
+	else
+		{
+		for(k=2;k<=str.length();k++)
+			{
+			guwapo.wasteful_number(k); //gitawag ang function nga 'wasteful_number' ni 'guwapo' para muperform sa tanang process sa range
+			}
+		}
 	
 	return 0;
 }
@@ -56,8 +58,6 @@ void cpe1b::palindromic_prime(long x){
 
 void cpe1b::wasteful_number(long x){
 	cout<<"WASTEFUL NUMBER NI SIYA"<<endl;	
-
-
 
 	digit(x);	
 	if (digits<factors){
@@ -141,15 +141,12 @@ long cpe1b::digit(long num3){
 		digits++;
 		}
 		
-		cout<<digits;
-		
-		
+		cout<<digits;		
 		primefactorization(johanna);
 		
 }
 
 long cpe1b::primefactorization(long num4){
-	
 	x=num4;
 	factors=0;
 	i=2;
