@@ -45,12 +45,6 @@ int main() {
 		guwapo.wasteful_number(num);
 	}
 	
-		
-	
-	
-	
-	
-	
 	
 	return 0;
 }
